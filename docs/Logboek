@@ -22,3 +22,9 @@
         '||' -> wat doen met dict in col?
         json vs csv
         kom link / url missing eig wel voor?
+        
+07 juni 2018
+    
+    Dataset, alles in json met pandas, apart de dictionaries parsen (splitten op dubbele punten).
+    Links kunnen waarschijnlijk weg. Iig de url van icident_url.
+    Lege cellen waarschijnlijk NaN of Unknown. 
