@@ -1,0 +1,153 @@
+Classification of Attribute attribute types
+
+incident_id
+    descr: id of incident from gunviolencearchive.org
+    attribute: nominal
+    range:
+
+date
+    descr: date of incident
+    attribute: ordinal
+    range: date between 1-1-2013 and 3-31-2018
+
+
+state
+    descr: state of incident
+    attribute: nominal
+    range: date between 1/1/2013 and 3/31/2018
+
+city_or_county
+    descr: city of incident
+    attribute: nominal
+    range:
+
+address
+    descr: address where incident took place
+    attribute: nominal ?
+    range: -
+
+n_killed
+    descr: number of people killed
+    attribute: ordinal
+    range:
+
+n_injured
+    descr: number of people injured
+    attribute: ordinal
+    range:
+
+incident_url
+    descr: link to gunviolencearchive.org webpage containing details of incident
+    attribute: nominal?
+    range: -
+
+source_url
+    descr: link to online news story concerning incident
+    attribute: nominal?
+    range:
+
+incident_url_fields_missing
+    descr: tells if incident link is missing
+    attribute: nominal
+    range: True if link is missing, False if link is not missing
+
+congressional_district
+    descr: There are 435 congressional districts. A district represents approximately 711,000 people
+    attribute: ordinal
+    range: 1 - 435
+
+gun_stolen
+    descr: gun stolen or not
+    attribute: nominal
+    range: key: gun ID, value: 'Unknown' or 'Stolen'
+
+gun_attribute type
+    descr: description of gun type
+    attribute: nominal?
+    range: dictionary with key: gun ID, value: description of gun type
+
+incident_characteristics
+    descr: list of incident characteristics
+    attribute: nominal?
+    range: -
+
+latitude
+    descr: latitude of earth
+    attribute: interval
+    range:
+
+location_description
+    descr: description of location where incident took place
+    attribute: nominal
+    range:
+
+longitude
+    descr: longitude on earth
+    attribute: interval
+    range:
+
+n_guns_involved
+    descr: number of guns involved
+    attribute: ordinal
+    range:
+
+notes
+    descr: additional notes about the incident
+    attribute:
+    range:
+
+participant_age
+    descr: age of participants
+    attribute: ordinal
+    range: key: participant ID; value: ?
+
+participant_age_group
+    descr: age group of participants
+    attribute: nominal
+    type: dict key: participant ID, value: description of age group
+    range: 'Adult 18+', 'Child 0-11', 'Teen 12-17'
+
+participant_gender
+    descr: gender of participants
+    attribute: nominal
+    type: dict key: participant ID, value: 'Male' or 'Female'
+    range: 'Male','Female'
+
+participant_name
+    descr: name of participants
+    attribute: nominal?
+    type: dict key: participant ID, value: name
+    range:
+
+participant_relationship
+    descr: relationship of participants to other participants
+    attribute: nominal?
+    type: dict key: participant ID, value: relationship of participant to other participants
+    range: family, ..., ?
+
+participant_status
+    descr: health status of participant after incident
+    attribute: nominal
+    type: dict key: participant ID, value: 'Arrested', 'Killed', 'Injured', or 'Unharmed'
+    range: 'Arrested', 'Killed', 'Injured', or 'Unharmed'
+
+participant_attribute type
+    descr: role of participant in incident
+    attribute: nominal
+    type: dict key: participant ID, value: 'Victim' or 'Subject-Suspect'
+    range: 'Victim' or 'Subject-Suspect'
+
+sources
+    descr: links to online news stories concerning incident
+    attribute: ?
+    range:
+
+state_house_district
+    descr: district nr of state house
+    attribute: nominal
+    range:
+
+state_senate_district
+    descr: senator district
+    attribute:
+    range:

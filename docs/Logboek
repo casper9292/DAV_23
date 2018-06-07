@@ -1,3 +1,24 @@
 5 juni 2018
-Eerste gesprek met Nick
-Github werkend
+    eerste gesprek met Nick
+    github werkend
+    bekijken dataset - voorbespreken veranderingen
+
+
+6 juni 2018
+    opschonen dataset
+    classification of attribute types
+    voordelen json vs csv
+
+    aanpassingen:
+        probleem in csv bronbestand gefixt enters
+        dubbele enters weg 
+
+
+
+    vragen:
+        location_description / notes(!) / participant_name / sources weg?
+        wat doen met date?
+        incident url... -> nominal?
+        '||' -> wat doen met dict in col?
+        json vs csv
+        kom link / url missing eig wel voor?
