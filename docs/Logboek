@@ -28,3 +28,11 @@
     Dataset, alles in json met pandas, apart de dictionaries parsen (splitten op dubbele punten).
     Links kunnen waarschijnlijk weg. Iig de url van icident_url.
     Lege cellen waarschijnlijk NaN of Unknown. 
+    
+    
+    Doelstellingen:
+    vragen bedenken (zeg altijd misschien, je kan niet alles uit de data halen)
+    json omzetten, dictionaries
+    
+    This week:
+    Eerste dingen uit de data halen, plotten.
