@@ -48,7 +48,7 @@
     Andere datasets toevoegen? In de huidige dataset? Hoe we al onze participant dictionaries als 1 dictionary krijgen?
     Jonas Bokeh? 
 
-14 Juni 2018
+14 juni 2018
 
     Dict fixen
     Meer gaan plotten
@@ -56,4 +56,34 @@
     Zelfde door jaren heen? Verdeling man/vrouw? Welke maanden meeste shootings? Hoeveel unknown? Worden daders jonger?  
     Groeperen van data. Kaart Amerika Bokeh.
     Mail NICK!!!!!!!!!!!!!! bij problemen
-    
+
+15 juni 2018
+    Bijeenkomst Bushuis,
+	to do voor dinsdag 19 juni:  
+	alle kolommen plotten met variates; 
+
+	participant_type (hoeveel); 
+	participant_relationship
+	participant_agegroup;
+	participant_age; --done
+	participant_status;
+	participant_gender; --done
+	city or county (aka stad);
+	incident_characteristics;
+	state (aka kaart);
+	
+	wat zijn combinaties van plots:
+    	tijdslijn -- verandering states
+	toename incidenten -- school shootings/suicides
+	welke namen komen het meest voor
+
+	vragen aan nick:
+	zal ik alle NaN's weghalen of laten staan?
+	wat doen we met iemand die 311 jaar oud is; of 209?
+
+
+
+
+
+
+
