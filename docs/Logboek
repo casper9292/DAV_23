@@ -63,23 +63,35 @@
 	alle kolommen plotten met variates; 
 
 	participant_type (hoeveel); 
-	participant_relationship
+	participant_relationship; 
 	participant_agegroup;
-	participant_age; --done
-	participant_status;
-	participant_gender; --done
-	city or county (aka stad);
-	incident_characteristics;
-	state (aka kaart);
+	participant_age; -- DONE
+	participant_status; 
+	participant_gender; -- DONE
+	city or county (aka stad); 
+	incident_characteristics; -- DONE
+	state (aka kaart); -- DONE
+	participant name; -- DONE
 	
 	wat zijn combinaties van plots:
-    	tijdslijn -- verandering states
+    	tijdslijn -- verandering states - casp mee bezig
 	toename incidenten -- school shootings/suicides
-	welke namen komen het meest voor
+	welke namen komen het meest voor - -- DONE
 
 	vragen aan nick:
 	zal ik alle NaN's weghalen of laten staan?
 	wat doen we met iemand die 311 jaar oud is; of 209?
+	callbacks: is daar doc van? help?
+	kleurtjes grafiek?
+	
+18 juni 2018
+	college
+	bespreken wat gedaan is
+		zie boven alles 'done'
+	verder werken aan plots lijstje boven die nog moeten
+	probleem: kleurtjes grafiek
+	
+	
 
 
 
