@@ -26,7 +26,7 @@
 07 juni 2018
     
     Dataset, alles in json met pandas, apart de dictionaries parsen (splitten op dubbele punten).
-    Links kunnen waarschijnlijk weg. Iig de url van icident_url.
+    Links kunnen waarschijnlijk weg. In ieder geval de url van icident_url.
     Lege cellen waarschijnlijk NaN of Unknown. 
     
     
