@@ -1,4 +1,4 @@
-5 juni 2018
+	5 juni 2018
     eerste gesprek met Nick
     github werkend
     bekijken dataset - voorbespreken veranderingen
@@ -92,6 +92,14 @@
 	probleem: kleurtjes grafiek
 
 19 juni 2018
+	Wat heeft iedereen gedaan:
+	Casper - plot gemaakt met slider/callback
+	Martijn - plot met tabs
+	Jonas - vrouwen/mannen procentueel plots uitwerken
+	Folkert	- plot uitgewerkt met staten/incident -> juiste volgorde
+	
+
+
 	laatste PAV les van het jaar
 	met Nick bespreken plots, en vragen:
 	-> zal ik alle NaN's weghalen of laten staan?
@@ -106,6 +114,7 @@
 	Deze week:
 	Vragen die we hadden en die we erbij hebben gekregen beantwoorden; iets met regressie; nuttige complexiteit toevoegen
 	1e versie report kunnen we a.s. vrijdag al inleveren om te laten controleren door Nick.
+
 
 
 
