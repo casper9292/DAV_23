@@ -115,6 +115,21 @@
 	Vragen die we hadden en die we erbij hebben gekregen beantwoorden; iets met regressie; 		nuttige complexiteit toevoegen
 	1e versie report kunnen we a.s. vrijdag al inleveren om te laten controleren door Nick.
 
+20 juni 2018
+	Vandaag laatste taken verdeeld:
+	Jonas en Martijn houden zich samen bezig met een spider web plot maken om de leeftijd te relateren aan verschillende
+	factoren zoals suicide en relationship
+	Casper gaat een plot maken met de kaart van de US en de incidenten per capita
+	Folkert zal zich voornamelijk bezighouden met het technisch rapport
+	
+21 juni 2018
+	Spider web plot is niet te maken in bokeh, dus gemaakt in matplotlib
+	Casper heeft de kaart van de US af
+	Folkert heeft de inleiding van het technisch rapport
 
+	Vragen voor Nick:
+	-> We willen graag iets met de betrokkenheid van politie in incidenten met vuurwapens doen, maar we vinden van alle incidenten
+	maar 1100 agenten die slachtoffer waren en 200 die dader waren in een incident, is dit significant genoeg? Of zouden we dat
+	eerst moeten onderzoeken?
 
 
