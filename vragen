@@ -1,0 +1,28 @@
+Vragen van de dataset:
+
+1. Hoe hebben de incidenten zich ontwikkeld over jaren/per staat/per stad? Visualiseer 
+    de verschil/overeenkomsten die je hebt gevonden?
+    
+    >> incidenten per jaar >> Barchart (status: klaar)
+    >> incidenten per staat per jaar >> Barchart met dropdown (status: klaar)
+        & kaart van de US per jaar (status: Casper)
+    >> incidenten over de jaren per stad >> Barchart oid (status: eventueel)
+    
+2. Wat zijn de patronen die je hebt gevonden die interessant zouden kunnen zijn? 
+    Bevat de data ongebruikelijke patronen die je niet had verwacht?
+    
+    >> Verdeling van leeftijd >> Barchart (status: klaar)
+    >> Aantal agenten betrokken bij incidenten, zowel killer als victim >> Barchart (status: had iemand ergens)
+    >> Verdeling mannen/vrouwen >> Barchart (status: klaar)
+    
+3. Hoe ziet het patroon van de verdeling daders/slachtoffers eruit over de jaren?
+    Is het voornamelijk familie/relatie of meer gemelde gegevens van gang violence?
+    
+    >> Killer/victims over de jaren >> Mosaic plot (status: Jonas)
+    >> Welke relatie komt meer voor, familie/relatie of gang violence >> mosaic plot? (status: weenie)
+    
+4. Eigen vragen
+    
+    >> Is er een cluster te vinden van incidenten waarbij agenten zijn betrokken;
+        zo ja, waar en wanneer en hangt er nog meer samen met deze omgeving/periode (status: Casper)
+    >> Bij welke relaties komen de meeste leeftijden voor >> spider web chart (status: Martijn/Jonas)
