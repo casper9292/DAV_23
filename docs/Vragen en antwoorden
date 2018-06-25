@@ -1,16 +1,46 @@
 HOOFDVRAGEN:
 1.Are there any notable differences between states/cities/years? 
   Visualize the differences (or similarities) that you can find.
+      Plot_states_years_radio_buttons
+          Legenda moet nog, Interessante findings, midden/oost steeds meer incidenten per capita.
+      Plot_states_stacked
+          Titel groter, verder prima plot, waar meeste incidenten
+      plot_barchart_years:
+          opnieuw, nu per maand
+       
 2.What are the patterns you discovered that you suspect could be interesting? 
   Does the data contain any unusual patterns that you did not expect?
+     Plot_states_years_radio_buttons
+     
 3.How does the pattern between killer/victim look between various incidents over the years. 
   Is it mostly family/relation or do we see more reported gang violence for instance?
-
+    GMAP POLICE HEEEEEEEL BELANGRIJK!!!!!!!!!!!! (KK zooi)
+        police brutality is gelukkig eerlijk verspreid. 
 
 
 
     Deelvragen:
     1. Worden er meer incidenten gemeld in de leeftijdsgroep 18-25
+        plot_male_female_age
+            moet opnieuw, legenda, beter x as, gewoon ff opnieuw, kleurtjes
+        ages_killed_vitcim
+            x van 0 tot 100.
+        NIEUWE GRAFIEK
+            leeftijden suspect en victim in 1 grafiek. basically 2 grafieken in 1. 
     2. Zijn er bepaalde namen die vaak voorkomen bij incidenten
     3. Is er een stijging in alle incidenten, of met name bijvoorbeeld "Suicides" of "Mass-Shootings"
-    4. Zijn er verschillen tussen man/vrouw
+    4. Zijn er verschillen tussen man/vrouw 
+        suspect_gender
+            Y-as, Male Female weg, Titel, procentueel
+        plot_number_of_states
+            andere naam, procentueel
+        male_female_verhouding
+            legenda ergens anders, vrouwen vaker victim...
+
+
+
+ALLE PLOTS VAN FOLKERT FF FIXEN
+
+
+
+WAT MOET NOG!!!!
