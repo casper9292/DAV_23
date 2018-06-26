@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gun Violence Black</title>
+        <link rel="stylesheet"  type="text/css" href="scripts/index_black.css">
+
+        <!-- load html bokeh plot -->
+        <script>
+                $(document).ready(function(){
+                   $('#content2').load("plot_states_California.html");
+                });
+        </script>
+    </head>
+    <body>
+        <div class="title">
+
+                <ul class="fly-in-text hidden">
+                        <li>G</li>
+                        <li>U</li>
+                        <li>N</li>
+                        <li> </li>
+                        <li>V</li>
+                        <li>I</li>
+                        <li>O</li>
+                        <li>L</li>
+                        <li>E</li>
+                        <li>N</li>
+                        <li>C</li>
+                        <li>E</li>
+                    </ul>
+
+        </div>
+    
+      
+        <div class="header"  style='text-align: center' id="myHeader">
+            <p class='invisible' id='scrolldown'>&#x21E9;</p>
+        </div>
+
+        <img id='myHeader2' src="scripts/images/gun3.png" alt="gun3">
+
+        <div class='container'>
+            <div id='firstcontainer'>
+                    <h1>HOW IS THE USA TODAY?</h1>
+                    <h3>There were 240.000 gun related incidents from 2013 untill today</h3>
+                <div id='map_total_incidents_container'>
+                    <embed class='map' src="scripts/plots/gmap_total_incidents.html">
+                </div>
+            </div>
+
+        <!-- <div><img src="../plots/plot_test.png" alt="HTML5 Icon" style='width: 40%'></div> -->
+            <div id="secondcontainer">
+                <div class='left'>
+                    <h3>Did the number of incidents increase?</h3>
+                    <p>... or decrease?</p>
+                    <div id=hideshow class="box slideleft plotbox">
+                        <embed class='plot' src="scripts/plots/plot_gender_age_division_type.html">
+                    </div>
+                </div>
+                <div class='right'>
+                    <div class='buttoncontainer'>
+                            
+                            <button class='btn' id="toggle">I am so sorry but I really don't care about precision just give me the answer</button>
+                            <div id=showhide>
+                                    <p> The number of incidents increased</p>
+                                    <embed class='plotcontain' src="scripts/plots/plot_barchart_years2.html">
+                            </div>
+                            <!-- <embed class='plotcontain' src="plots/plot_barchart_years2.html"> -->
+                    </div>
+                        
+                </div>
+            </div>
+
+            <div id="thirdcontainer">
+
+                <h3 style='margin-left: 30%'>So the number of incidents increased... overall?</h3>
+                <h1 style='margin-left: 30%'>THERE SEEMS TO BE A CLUSTER</h1>
+                <div >   
+                    <div id='map_total_incidents_container' class='box slideright'>
+                        <embed class='map' src="scripts/plots/plot_states_year_radiobuttons.html">
+                    </div>
+                </div> 
+
+            </div>
+        </div>      
+
+            <div class='newsubject'>2. UNUSUAL PATTERNS</div>
+
+        
+        <div class='container' style='margin-top: 0'>
+                <div id="secondcontainer" style='margin-top: none'>
+                <div class='left'>
+                    <h1 style='color: white'>Why would you shoot?</h3>
+                    <p style='color: white'> the most common motivations for an incident </p>
+                    <div class="box slideleft plotbox">
+                        <!-- <embed class='plot' src="plots/plot_gender_age_division_type.html"> -->
+                        <img src="scripts/plots/plot_type_incident.png" alt="plots/plot incident types" style='width: 100%'>
+                    </div>
+                </div>
+                <div class='right'>
+                    <div class='buttoncontainer'>
+                            
+                            <button class='btn' id="toggle2">What does this mean?</button>
+                            <div id=showhide2>
+                                    <p style='color: white'> There was an increase in Armed Robbery incidents over the years</p>
+                            </div>
+                            <!-- <embed class='plotcontain' src="plots/plot_barchart_years2.html"> -->
+                    </div>
+                        
+                </div>
+
+        <!-- slide in -->
+        <div class="box slideright"></div>
+        <div class="box slideleft"></div>
+        <div class="box slideright"></div>
+        <div class="box slideleft"></div>
+        <div class="box slideright"></div>
+        <div class="box slideleft"></div>
+        <div class="box rotate"></div>
+        <div class="box scale"></div>
+        <div class="box translate"></div>
+        
+
+
+        </div>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        
+        
+        <!-- gun violence text script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                setTimeout(function() {
+                    $('.fly-in-text').removeClass('hidden');
+                }, 500);
+                
+            })();
+        </script>
+
+        <!-- gun fly in script -->
+        <script type="text/javascript">
+                    
+                window.setTimeout(function(){
+                    $('#myHeader2').addClass("visiblegun");
+                    $('#scrolldown').addClass("fadein");
+                    }, 3000);
+        </script>
+
+        <!-- flying header and gun stay in place after short scroll -->
+        <script>
+                window.onscroll = function() {myFunction()};
+                
+                var header = document.getElementById("myHeader");
+                var header2 = document.getElementById("myHeader2");
+                var sticky = header.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                    header2.classList.remove("visiblegun");
+                    header2.classList.add("sticky2");
+                    header2.classList.add("visiblegun_afterscroll");
+                  } else {
+                    header.classList.remove("sticky");
+                    header2.classList.remove("sticky2");
+                  }
+                }               
+        </script>
+
+        <!-- divs sliding in from right and left -->
+        <script type="text/javascript">
+            ;(function($, win) {
+                $.fn.inViewport = function(cb) {
+                    return this.each(function(i,el) {
+                        function visPx(){
+                            var H = $(this).height(),
+                            r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+                            return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+                        } visPx();
+                        $(win).on("resize scroll", visPx);
+                    });
+                };
+            }(jQuery, window));
+
+            $(function(){ // DOM is now ready
+                $(".box").inViewport(function(px){
+                    if(px) $(this).addClass("triggeredCSS3") ;
+                });
+            });
+        </script>
+
+        <!-- show div by clicking a button -->
+        <script>
+            $(document).ready(function(){
+                $("#toggle").click(function(){
+                    $("#showhide").fadeToggle();
+                });
+            });
+        </script>
+        <script>
+                $(document).ready(function(){
+                    $("#toggle2").click(function(){
+                        $("#showhide2").fadeToggle();
+                    });
+                });
+            </script>
+
+
+        <!-- change background color on scroll -->
+        <script>
+            $(document).ready(function(){       
+                var scroll_pos = 0;
+                $(document).scroll(function() { 
+                    scroll_pos = $(this).scrollTop();
+                    if(scroll_pos > 3000) {
+                        $("body").removeClass().addClass('red');
+                    } 
+                    else {
+                        $("body").removeClass('red').addClass('black');
+                    }
+                });
+            });
+        </script>
+
+    </body>
+
+</html>
