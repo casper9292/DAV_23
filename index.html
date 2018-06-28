@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gun Violence</title>
+        <link rel="stylesheet"  type="text/css" href="scripts/index_black.css">
+
+        <!-- load html bokeh plot -->
+        <script>
+                $(document).ready(function(){
+                   $('#content2').load("plot_states_California.html");
+                });
+        </script>
+    </head>
+    <body>
+        <div class="title">
+
+                <ul class="fly-in-text hidden">
+                        <li>G</li>
+                        <li>U</li>
+                        <li>N</li>
+                        <li> </li>
+                        <li>V</li>
+                        <li>I</li>
+                        <li>O</li>
+                        <li>L</li>
+                        <li>E</li>
+                        <li>N</li>
+                        <li>C</li>
+                        <li>E</li>
+                    </ul>
+
+        </div>
+    
+      
+        <div class="header"  style='text-align: center' id="myHeader">
+            <p class='invisible' id='scrolldown'>&#x21E9;</p>
+        </div>
+
+        <img id='myHeader2' src="scripts/images/gun3.png" alt="gun3">
+
+        <div class='container'>
+            <div id='firstcontainer'>
+                    <h1>HOW IS THE USA TODAY?</h1>
+                    <h3>There were 240.000 gun related incidents from 2013 untill today</h3>
+                <div id='map_total_incidents_container'>
+                    <embed class='map' src="scripts/plots/gmap_total_incidents.html">
+                    <!-- <img  class='map' style='opacity: 0.7' src="scripts/images/gmap_png_2.png" alt="gmap"> -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class='newsubject'>1. DIFFERENCES IN TIME AND        PLACE</div>
+
+        <div class='container' style='margin-top: 0 !important; margin-bottom: 0 !important'>
+            <div id="secondcontainer">
+                <div class='left'>
+                    <h3>Did the number of incidents increase?</h3>
+                    <p>... or decrease?</p>
+                    <div id=hideshow class="box slideleft plotbox">
+                        <embed class='plot' src="scripts/plots/plot_incidents_troughout.html">
+                    </div>
+                </div>
+                <div class='right' style='height: 80% !important'>
+                    <div class='buttoncontainer'>
+                            
+                            <button class='btn' id="toggle">I am so sorry I don't understand this graph please show me a barchart</button>
+                            <div id=showhide>
+                                    <p> The number of incidents increased</p>
+                                    <embed class='plotcontain' src="scripts/plots/plot_barchart_years2.html">
+                            </div>
+                            <!-- <embed class='plotcontain' src="plots/plot_barchart_years2.html"> -->
+                    </div>
+                        
+                </div>
+            </div>
+            <div id="thirdcontainer" style='text-align: center'>
+
+                <h3 style='margin-left: 30%'>So the number of incidents increased... overall?</h3>
+                <h1 style='margin-left: 30%'>THERE SEEMS TO BE A CLUSTER</h1>
+                <div >   
+                    <div id='map_total_incidents_container' class='box slideright'>
+                        <embed class='map' src="scripts/plots/plot_states_year_radiobuttons.html">
+                    </div>
+                </div> 
+
+            </div>
+        </div>      
+
+        <div class='newsubject'>2. UNUSUAL PATTERNS</div>
+        <div class='container2'>
+            <div id="secondcontainer" style='height: 30rem !important;'> 
+                <div class='left' style='height: 30rem !important;'>
+                    <h1 class='white'>When do we shoot?</h3>
+                    <p class='white'> The days best to stay indoors </p>
+                    <div class="box slideleft plotbox">
+                        <embed class='plotcontain' style = 'opacity:0.8; height:20rem;' src="scripts/plots/plot_holidays.html">
+                    </div>
+                </div>
+                <div class='right' style='height: 50% !important'>
+                    <div class='buttoncontainer' style='margin-top: 10rem; width: 30rem !important;'>
+                            <button class='btn' id="toggle2"> States where people should try to have more fun</button>
+                            <div id=showhide2>
+                                    <p class='white'> These are the states with the most suicedes: </p>
+                                    <img src="scripts/plots/suicide.jpg" alt="suicide" style='width: 60%;'>
+                                    <!-- <embed class='plotcontain' style = 'opacity:0.8' src="scripts/plots/suicides_capita.html"> -->
+                            </div>
+                    </div>         
+                </div>
+            </div>
+
+            <div id='container_dif'>
+                <div class='left_dif'>
+                        <div class='buttoncontainer'>   
+                            <h3 class='white'> Women better stay at home</h3>
+                            <p class='white'> they are more likely to be a victim </p>
+                        </div>        
+                </div>
+                <div class='right_dif'>
+                        <div class="box plotbox">
+                                <embed class='plot' src="scripts/plots/victim_subject_difference_male_female.html" style='height: 100%'>
+                            </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class='newsubject white'>3. DISTRIBUTION OF THE KILLER/VICTIM RATIO</div>
+
+        <div class='container2' style='margin-top: 0'>
+            <div id="secondcontainer">
+                <div class='left'>
+                    <h1 class='blacktext'>Why would you shoot?</h3>
+                    <p class='blacktext'> the most common motivations for an incident </p>
+                    <div class="box slideleft plotbox">
+                            <embed class='plot' src="scripts/plots/incidents.html" style='height: 100%'>
+                    </div>
+                </div>
+                <div class='right' style='height: 50% !important'>
+                    <div class='buttoncontainer'>
+                            <button class='btn' id="toggle5">uhm.. explenation..?</button>
+                            <div id=showhide5>
+                                    <p class='blacktext'> There was an increase in Armed Robbery incidents over the years. The number of family motivated incidents decreased. </p>
+                            </div>
+                    </div>         
+                </div>
+            </div>
+
+            <div id="secondcontainer">
+                <div class='left'>
+                    <h1 class='white'>The Suspect-Victim ratio is evenly distributed</h3>
+                    <p class='white'> .....which is strange... </p>
+                    <div class="box slideleft plotbox">
+                            
+                            <embed class='plot' src="scripts/plots/victim_suspect_biggest_cities.html" style='height: 100%'>
+                        </div>
+                </div>
+                <div class='right' style='height: 50% !important'>
+                    <div class='buttoncontainer'>
+                            <button class='btn' id="toggle4">Give me a conclusion</button>
+                            <div id=showhide4>
+                                <p class='white'> According to the dataset the number of victims is almost equal to the number of suspects. This is strange, for this means that every case with an arrested shooter with 5 victims, there is also a case with 5 victims and no shooter arrested, or 5 cases with one victim and no one arrested, etc. </p>
+                            </div>
+                    </div>         
+                </div>
+            </div>
+        </div>
+
+        <div class='newsubject blacktext'> 4. THE PROBLEMATIC AGE: ADOLESCENCE </div>
+        <div class='container' style='margin-top: 0'>
+            <div id="thirdcontainer" >
+                <div class='genderleft'>
+                    <div class='buttoncontainer' style='height: 45rem !important'>
+                            <!-- <h3> hier moet eig iets komen </h3> -->
+                    </div>
+                </div>
+                <div class='genderright'>
+                    <h3 style='margin-left: 30%'> Hitting puberty </h3>
+                    <h1 style='margin-left: 30%'>Not your safest time</h1>
+                    <div >   
+                            <embed class='gender_age_deivision_plot' src="scripts/plots/plot_gender_age_division_type.html">
+                    </div> 
+                </div>
+            </div>
+
+            <div id="secondcontainer">
+                <div class='left'>
+                    <h1 class='blacktext'>Why would you shoot...</h3>
+                    <p class='blacktext'> ..at what age?</p>
+                    <div id=hideshow class="box slideleft plotbox">
+                            <img src="scripts/plots/motivation.png" alt="radar chart age" style='width: 100%'>
+                    </div>
+                </div>
+                <div class='right'>
+                    <div class='buttoncontainer'>
+                            
+                            <button class='btn' id="toggle6"> this is a nice graph </button>
+                            <div id=showhide6>
+                                    <p class='blacktext'> It is a radar chart. Do you want to know something exciting? </p>
+                                    <p class='blacktext'> there is barely a difference between men and women: </p>
+                                    <img src="scripts/plots/motivation_gender.png" alt="radar chart age" style='width: 60%'>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style='height: 3rem;width: 100%;'></div>
+        <div class='newsubject blacktext' style='border: none !important'> 5. POLICE BRUTALITY </div>
+
+
+        <div class='container2' style='margin-top:0 !important; '>
+            <div id="secondcontainer">
+                <div class='rightpolice'>
+                    <h1 class='blacktext'> What did the police do?</h3>
+                    <p class='blacktext' style='margin-left: 30%'> sometimes Mr. Officer was a victim, sometimes a suspect </p>
+                    <!-- <div class="box slideleft plotbox"> -->
+                    <img  style='opacity: 0.7; width: 80%; margin-left: 10%;' src="scripts/plots/gmap_police_2.png" alt="gmap">
+                        <!-- map: te groot. proberen afbeelding -->
+                        <!-- <div id='map_police_container'>
+                            <embed class='map' src="scripts/plots/gmap_police_2.html">
+                        </div> -->
+                    <!-- </div> -->
+                </div>
+                <div class='leftpolice' >
+                    <div class='buttoncontainer' style='margin-top: 20rem !important'>
+                        <button class='btn' id="toggle3">Tell me more</button>
+                        <div id=showhide3>
+                                <p class='blacktext'> Police brutality has been an issue in the USA since the 1930s. <a href="https://en.wikipedia.org/wiki/Police_brutality_in_the_United_States#Cultural_factors_unique_to_the_United_States">Recently it became a topic of interest again.</a> According to our dataset the problem is nowadays centered in cities in the center of the USA.  </p>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+            <div id="secondcontainer" style='margin-top: 0!important'>
+                <div class='left' style='overflow: hidden; margin-top: 0!important'>
+                    <h1 class='blacktext'> What did we do to the police ?</h3>
+                    <!-- <p class='blacktext'> :-( </p> -->
+                    <div style='position: absolute; left:55%; width:2%; '>
+                            <img src="scripts/plots/legenda.png" alt="legenda" style='width: 60%'>
+                    </div>
+                    <div class="box slideleft plotbox">
+                        <div id='map_police_container'>
+                            <embed class='map' src="scripts/plots/gmap_police_suspect_filled_radiobuttons.html">
+                        </div>
+                    </div>
+                </div>
+                <div class='right' style='height: 50% !important;'>
+                    <div class='buttoncontainer'>
+                            <button class='btn' id="toggle8"> Tell me more about ages and police brutality</button>
+                            <div id=showhide8>
+                                <p class='blacktext'> Civilians who shoot at an officer are above average of age </p>
+                                <embed class='plotcontain' style = 'opacity:0.8' src="scripts/plots/boxplot_police.html">
+                            </div>
+                    </div>         
+                </div>
+            </div>
+
+
+<!-- 
+            <div id="secondcontainer" style='margin-top: 0!important'>
+                <div class='left' style='overflow: hidden; margin-top: 0!important'>
+                    <h1 class='blacktext'> How well does the police report?</h3>
+                    <p class='blacktext'> ... </p>
+                    <div class="box slideleft plotbox">
+                        <div id='map_police_container'>
+                            <embed class='map' src="scripts/plots/plot_barchart_police.html">
+                        </div>
+                    </div>
+                </div>
+                <div class='right' style='height: 50% !important;'>
+                    <div class='buttoncontainer'>
+                        <button class='btn' id="toggle11">  What's this? </button>
+                        <div id=showhide11>
+                            <p class='blacktext'> The percentage of unknown values of a average incident is 46%. When the police is involved, the percentage is 68%. </p>
+                            <embed class='plotcontain' style = 'opacity:0.8' src="scripts/plots/boxplot_police.html">
+                        </div>
+                    </div>         
+                </div>
+            </div> -->
+            <div class='buttoncontainer' style='margin: 0 30% 0 30%'>
+                    <button class='btn' id="toggle11">  What's this? </button>
+                    <div id=showhide11>
+                        <p class='blacktext'> The percentage of unknown values of a average incident is 46%. When the police is involved, the percentage is 68%. </p>
+                        <embed class='plotcontain' style = 'opacity:0.8' src="scripts/plots/boxplot_police.html">
+                    </div>
+            </div>         
+        </div>
+            <!-- <div id="secondcontainer" style='margin-top: 0!important'>
+                <div class='left' style='overflow: hidden; margin-top: 0!important'>
+                    <h1 class='blacktext'> What did we do to the police ?</h3>
+                    <p class='blacktext'> :-( </p>
+                    <div class="box slideleft plotbox">
+                        <div id='map_police_container'>
+                            <embed class='map' src="scripts/plots/gmap_police_suspect_filled_radiobuttons.html">
+                        </div>
+                    </div>
+                </div>
+                <div class='right' style='height: 50% !important;'>
+                    <div class='buttoncontainer'>
+                            <button class='btn' id="toggle8"> Tell me more about ages and police brutality</button>
+                            <div id=showhide8>
+                                <p class='blacktext'> Civilians who shoot at an officer are above average of age </p>
+                                <embed class='plotcontain' style = 'opacity:0.8' src="scripts/plots/boxplot_police.html">
+                            </div>
+                    </div>         
+                </div>
+            </div>
+        </div> -->
+        
+
+            <!-- <div class='container2'>
+                <div id="secondcontainer" style='margin-top: 0!important'>
+                        <div class='left' style='overflow: hidden; margin-top: 0!important'>
+                            <h1 class='blacktext'> How well does the police report?</h3>
+                            <p class='blacktext'> ... </p>
+                            <div class="box slideleft plotbox">
+                                <div id='map_police_container'>
+                                    <embed class='map' src="scripts/plots/plot_barchart_police.html">
+                                </div>
+                            </div>
+                        </div>
+                        <div class='right' style='height: 50% !important;'>
+                            <div class='buttoncontainer'>
+                                    <button class='btn' id="toggle11">  What's this? </button>
+                                    <div id=showhide11>
+                                        <p class='blacktext'> The percentage of unknown values of a average incident is 46%. When the police is involved, the percentage is 68%. </p>
+                                        <embed class='plotcontain' style = 'opacity:0.8' src="scripts/plots/boxplot_police.html">
+                                    </div>
+                            </div>         
+                        </div>
+                    </div>
+            </div>
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+        
+        
+        <!-- gun violence text script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                setTimeout(function() {
+                    $('.fly-in-text').removeClass('hidden');
+                }, 500);
+                
+            })();
+        </script>
+
+        <!-- gun fly in script -->
+        <script type="text/javascript">
+                    
+                window.setTimeout(function(){
+                    $('#myHeader2').addClass("visiblegun");
+                    $('#scrolldown').addClass("fadein");
+                    }, 3000);
+        </script>
+
+        <!-- flying header and gun stay in place after short scroll -->
+        <script>
+                window.onscroll = function() {myFunction()};
+                
+                var header = document.getElementById("myHeader");
+                var header2 = document.getElementById("myHeader2");
+                var sticky = header.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                    header2.classList.remove("visiblegun");
+                    header2.classList.add("sticky2");
+                    header2.classList.add("visiblegun_afterscroll");
+                  } else {
+                    header.classList.remove("sticky");
+                    header2.classList.remove("sticky2");
+                  }
+                }               
+        </script>
+
+        <!-- divs sliding in from right and left -->
+        <script type="text/javascript">
+            ;(function($, win) {
+                $.fn.inViewport = function(cb) {
+                    return this.each(function(i,el) {
+                        function visPx(){
+                            var H = $(this).height(),
+                            r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+                            return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+                        } visPx();
+                        $(win).on("resize scroll", visPx);
+                    });
+                };
+            }(jQuery, window));
+
+            $(function(){ // DOM is now ready
+                $(".box").inViewport(function(px){
+                    if(px) $(this).addClass("triggeredCSS3") ;
+                });
+            });
+        </script>
+
+        <!-- show div by clicking a button -->
+        <script>
+            $(document).ready(function(){
+                $("#toggle").click(function(){
+                    $("#showhide").fadeToggle();
+                });
+            });
+        </script>
+        <script>
+                $(document).ready(function(){
+                    $("#toggle2").click(function(){
+                        $("#showhide2").fadeToggle();
+                    });
+                    $("#toggle3").click(function(){
+                        $("#showhide3").fadeToggle();
+                    });
+                    $("#toggle4").click(function(){
+                        $("#showhide4").fadeToggle();
+                    });
+                    $("#toggle5").click(function(){
+                        $("#showhide5").fadeToggle();
+                    });
+                    $("#toggle6").click(function(){
+                        $("#showhide6").fadeToggle();
+                    });
+                    $("#toggle7").click(function(){
+                        $("#showhide7").fadeToggle();
+                    });
+                    $("#toggle8").click(function(){
+                        $("#showhide8").fadeToggle();
+                    });
+                    $("#toggle9").click(function(){
+                        $("#showhide9").fadeToggle();
+                    });
+                    $("#toggle10").click(function(){
+                        $("#showhide10").fadeToggle();
+                    });
+                    $("#toggle11").click(function(){
+                        $("#showhide11").fadeToggle();
+                    });
+                });
+        </script>
+
+
+        <!-- change background color on scroll -->
+        <script>
+            $(document).ready(function(){       
+                var scroll_pos = 0;
+                $(document).scroll(function() { 
+                    scroll_pos = $(this).scrollTop();
+                    if(scroll_pos > 2000 && scroll_pos < 4500) {
+                        $("body").removeClass().addClass('red');
+                    } 
+                    else if(scroll_pos > 4500 && scroll_pos < 6500) {
+                        $("body").removeClass().addClass('yellow');
+                    } 
+                    else if(scroll_pos > 6500 && scroll_pos < 12000) {
+                        $("body").removeClass().addClass('whitebg');
+                    } 
+                    else if(scroll_pos < 2000) {
+                        $("body").removeClass('red').addClass('black');
+                    }
+                });
+            });
+        </script>
+
+
+
+    </body>
+
+</html>
